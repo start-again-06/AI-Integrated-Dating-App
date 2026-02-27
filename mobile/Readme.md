@@ -43,6 +43,47 @@ The frontend acts as the decision-making layer, transforming raw AI output into 
 - One-tap AI plan generation
 - Clear presentation of multiple AI-generated options
 
+---
+
+### Budget Modeling & Constraints
+
+The budget input is treated as a **bounded numerical constraint** rather than a fixed value.
+
+Let the user-defined budget be represented as:
+
+- **Lower bound:** \( B_{min} \)
+- **Upper bound:** \( B_{max} \)
+
+The effective budget interval is:
+
+\[
+B = [B_{min}, B_{max}]
+\]
+
+Each AI-generated plan consists of one or more activities \( a_i \), each associated with an estimated cost \( c_i \).
+
+The total estimated plan cost is computed as:
+
+\[
+C_{plan} = \sum_{i=1}^{n} c_i
+\]
+
+A plan is considered **budget-feasible** if:
+
+\[
+B_{min} \leq C_{plan} \leq B_{max}
+\]
+
+Plans that slightly exceed the upper bound may still be surfaced with an explanation, allowing the user to trade off cost versus experience quality.
+
+This formulation enables:
+- Flexible budget handling
+- Transparent cost reasoning
+- Consistent filtering of AI-generated plans
+- Clear user control over financial constraints
+
+---
+
 ### Plan Selection & Persistence
 - User-driven acceptance of a chosen plan
 - Explicit confirmation of saved plans
@@ -104,14 +145,15 @@ This structure ensures the frontend remains simple to reason about, even as feat
 
 ## Workflow Summary
 
-1. User opens the mobile application
-2. User logs in or registers
-3. Session is securely stored on-device
-4. User enters date preferences
-5. AI generates structured date plans
-6. User reviews and accepts a plan
-7. Plan is saved and visible in history
-8. App restores session automatically on restart
+1. User opens the mobile application  
+2. User logs in or registers  
+3. Session is securely stored on-device  
+4. User enters date preferences  
+5. AI generates structured date plans  
+6. Plans are filtered using budget constraints  
+7. User reviews and accepts a plan  
+8. Plan is saved and visible in history  
+9. App restores session automatically on restart  
 
 ---
 
@@ -149,10 +191,10 @@ This structure ensures the frontend remains simple to reason about, even as feat
 
 ## Future Enhancements
 
+- Probabilistic cost estimation
+- Dynamic budget relaxation based on user behavior
+- Cost–experience optimization objectives
 - UI/UX polish and animations
-- Loading, empty, and error states
-- Plan comparison view
-- Feedback loop for AI improvement
 - Push notifications
 - App Store / Play Store distribution
 
