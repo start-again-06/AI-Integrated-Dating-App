@@ -77,6 +77,7 @@ This formulation enables:
 - Consistent filtering of AI-generated plans
 - Clear user control over financial constraints
 
+![image alt](https://github.com/start-again-06/AI-Integrated-Dating-App/blob/main/mobile/Cost_prediction.png?raw=true)
 ---
 
 ### Plan Selection & Persistence
