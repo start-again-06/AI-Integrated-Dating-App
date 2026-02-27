@@ -51,28 +51,34 @@ The budget input is treated as a **bounded numerical constraint** rather than a 
 
 Let the user-defined budget be represented as:
 
-- **Lower bound:** \( B_{min} \)
-- **Upper bound:** \( B_{max} \)
+- **Lower bound:** $\( B_{min} \)$
+- **Upper bound:** $\( B_{max} \)$
 
 The effective budget interval is:
 
+$
 \[
 B = [B_{min}, B_{max}]
 \]
+$
 
-Each AI-generated plan consists of one or more activities \( a_i \), each associated with an estimated cost \( c_i \).
+Each AI-generated plan consists of one or more activities $\( a_i \)$, each associated with an estimated cost $\( c_i \)$.
 
 The total estimated plan cost is computed as:
 
+$
 \[
 C_{plan} = \sum_{i=1}^{n} c_i
 \]
+$
 
 A plan is considered **budget-feasible** if:
 
+$
 \[
 B_{min} \leq C_{plan} \leq B_{max}
 \]
+$
 
 Plans that slightly exceed the upper bound may still be surfaced with an explanation, allowing the user to trade off cost versus experience quality.
 
