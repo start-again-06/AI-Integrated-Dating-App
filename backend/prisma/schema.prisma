@@ -8,16 +8,20 @@ generator client {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
+  id        String     @id @default(uuid())
+  email     String     @unique
+  password  String
   location  String?
   intent    String?
-  createdAt DateTime @default(now())
+  createdAt DateTime   @default(now())
+  datePlans DatePlan[]
 }
 
 model DatePlan {
   id        String   @id @default(uuid())
-  userId    String
   planJson  Json
   createdAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
 }
