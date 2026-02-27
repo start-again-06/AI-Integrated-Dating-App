@@ -126,6 +126,7 @@ The frontend follows a layered mobile architecture optimized for clarity, scalab
 - Reusable async utilities
 - Error-safe abstractions
 
+![image alt](https://github.com/start-again-06/AI-Integrated-Dating-App/blob/main/mobile/entity_matching.png?raw=true)
 This structure ensures the frontend remains simple to reason about, even as features grow.
 
 ---
