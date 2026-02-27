@@ -24,6 +24,7 @@ The AI Date Planner Frontend enables users to plan meaningful dates by combining
 
 The frontend acts as the decision-making layer, transforming raw AI output into an experience that feels intentional, safe, and easy to use.
 
+![image alt](https://github.com/start-again-06/AI-Integrated-Dating-App/blob/main/mobile/deployment.png?raw=true)
 ---
 
 ## System Capabilities
