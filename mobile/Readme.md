@@ -100,7 +100,7 @@ This formulation enables:
 
 The frontend follows a layered mobile architecture optimized for clarity, scalability, and maintainability.
 
-![System Architecture](docs/architecture.png)
+![System Architecture](mobile/system_architecture.png)
 
 ### Core Layers
 
