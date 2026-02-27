@@ -100,7 +100,7 @@ This formulation enables:
 
 The frontend follows a layered mobile architecture optimized for clarity, scalability, and maintainability.
 
-![System Architecture](mobile/system_architecture.png)
+![image alt](https://github.com/start-again-06/AI-Integrated-Dating-App/blob/main/mobile/system_architecture.png?raw=true))
 
 ### Core Layers
 
