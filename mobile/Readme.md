@@ -164,6 +164,7 @@ This structure ensures the frontend remains simple to reason about, even as feat
 - Security: Expo SecureStore (encrypted storage)
 - Architecture Style: Layered mobile application
 
+![image alt](https://github.com/start-again-06/AI-Integrated-Dating-App/blob/main/mobile/ER_Model.png?raw=true)
 ---
 
 ## Intended Use Cases
