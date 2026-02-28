@@ -22,7 +22,7 @@ The AI Integrated Dating App enables users to plan meaningful dates by combining
 - User-driven plan selection
 - Persistent plan history
 
-Across the full stack, the system acts as a **decision-support platform**, transforming raw AI output into validated, explainable, and user-approved experiences.
+Across the full stack, the system acts as a decision-support platform, transforming raw AI output into validated, explainable, and user-approved experiences.
 
 ---
 
@@ -66,7 +66,7 @@ The total estimated plan cost is computed as:
 
 $\[C_{plan} = \sum_{i=1}^{n} c_i\]$
 
-A plan is considered **budget-feasible** if:
+A plan is considered budget-feasible if:
 
 $\[B_{min} \leq C_{plan} \leq B_{max}\]$
 
@@ -108,8 +108,8 @@ The system follows a layered, full-stack architecture optimized for clarity, sca
 
 ```mermaid
 flowchart LR
-    Client[Mobile App (React Native)]
-    subgraph Backend["Backend API (Node.js + Express)"]
+    Client[Mobile App - React Native]
+    subgraph Backend["Backend API - Node.js + Express"]
         Auth[JWT Auth Middleware]
         Routes[API Routes]
         AIOrch[AI Orchestration]
@@ -117,7 +117,7 @@ flowchart LR
     end
 
     AI[AI Service]
-    DB[(PostgreSQL)]
+    DB[PostgreSQL]
 
     Client -->|HTTPS + JWT| Auth
     Auth --> Routes
