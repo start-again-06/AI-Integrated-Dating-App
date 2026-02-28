@@ -5,9 +5,9 @@ Secure API & AI Orchestration Layer for Intelligent Date Planning
 This repository contains the backend infrastructure for the AI Integrated Dating App.  
 The backend is responsible for secure authentication, orchestration of AI-powered date plan generation, business logic enforcement, and persistent data storage.
 
-It acts as the system’s **source of truth**, ensuring that all AI outputs are validated, structured, filtered, and safely stored before being exposed to the mobile client.
+It acts as the system’s source of truth, ensuring that all AI outputs are validated, structured, filtered, and safely stored before being exposed to the mobile client.
 
-The backend is designed to be **secure, scalable, and explainable**, prioritizing clarity of data flow and explicit user control over AI-driven decisions.
+The backend is designed to be secure, scalable, and explainable, prioritizing clarity of data flow and explicit user control over AI-driven decisions.
 
 ---
 
@@ -55,32 +55,24 @@ image alt
 Budget is modeled as a bounded interval rather than a fixed value.
 
 Let:
-- \( B_{min} \) = minimum acceptable budget  
-- \( B_{max} \) = maximum acceptable budget  
+- $\( B_{min} \)$ = minimum acceptable budget  
+- $\( B_{max} \)$ = maximum acceptable budget  
 
 The effective budget constraint is:
 
-\[
-B = [B_{min}, B_{max}]
-\]
+$\[B = [B_{min}, B_{max}]\]$
 
-Each date plan consists of activities \( a_i \), each with estimated cost \( c_i \).
+Each date plan consists of activities $\( a_i \)$, each with estimated cost $\( c_i \)$.
 
 Total plan cost:
 
-\[
-C_{plan} = \sum_{i=1}^{n} c_i
-\]
+$\[C_{plan} = \sum_{i=1}^{n} c_i\]$
 
 A plan is considered valid if:
 
-\[
-B_{min} \leq C_{plan} \leq B_{max}
-\]
+$\[B_{min} \leq C_{plan} \leq B_{max}\]$
 
-Plans slightly exceeding \( B_{max} \) may be stored with metadata explaining the trade-off.
-
-image alt
+Plans slightly exceeding $\( B_{max} \)$ may be stored with metadata explaining the trade-off.
 
 ---
 
@@ -123,8 +115,6 @@ image alt
 | planJson | json |
 | accepted | boolean |
 | createdAt | datetime |
-
-image alt
 
 ---
 
@@ -229,4 +219,4 @@ All protected routes require a valid JWT.
 ---
 
 ## License
-This backend is intended for **educational, demonstration, and portfolio use**.
+This backend is intended for educational, demonstration, and portfolio use.
