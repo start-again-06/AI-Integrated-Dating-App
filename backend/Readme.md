@@ -217,4 +217,4 @@ All protected routes require a valid JWT.
 ---
 
 ## License
-This backend is intended for educational, demonstration, and portfolio use.
+This project is intended for educational, demonstration, and portfolio use.
