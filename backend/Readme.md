@@ -22,8 +22,6 @@ The backend enables intelligent date planning by combining:
 
 It serves as the control layer between the mobile frontend, AI services, and the database.
 
-image alt
-
 ---
 
 ## System Capabilities
@@ -121,7 +119,7 @@ Plans slightly exceeding $\( B_{max} \)$ may be stored with metadata explaining 
 ## High-Level Architecture
 The backend follows a layered architecture designed for clarity, security, and maintainability.
 
-![image alt](
+![image alt](https://github.com/start-again-06/AI-Integrated-Dating-App/blob/main/backend/backend_specific.png?raw=true)
 
 ---
 
